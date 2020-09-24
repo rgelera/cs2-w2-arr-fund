@@ -28,9 +28,10 @@ int main(int argc, char** argv) {
   cout << "isSorted returned " << isSorted(testArray3, TEST_ARRAY_3_SIZE) << "\n";
 
   // Question 2
-  const char test_char_arr[10] = {'a', 'b', 'C', 'D', 'e', 'F', 'g', 'h', 'i', 'J'};
+  const int TEST_ARRAY_4_SIZE = 10;
+  const char test_char_arr[TEST_ARRAY_4_SIZE] = {'a', 'b', 'C', 'D', 'e', 'F', 'g', 'h', 'i', 'J'};
   int count = 0;
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < TEST_ARRAY_4_SIZE; i++) {
     if (test_char_arr[i] >= 65 && test_char_arr[i] <= 90) {
       count++;
     }
