@@ -14,6 +14,7 @@ bool isSorted(int array[], int numItems) {
 }
 
 int main(int argc, char** argv) {
+  // Question 1
   const int TEST_ARRAY_1_SIZE = 7;
   int testArray1[TEST_ARRAY_1_SIZE] = {4, 2, 4, 5, 6, 7, 8};
   cout << "isSorted returned " << isSorted(testArray1, TEST_ARRAY_1_SIZE) << "\n";
@@ -25,4 +26,14 @@ int main(int argc, char** argv) {
   const int TEST_ARRAY_3_SIZE = 1;
   int testArray3[TEST_ARRAY_3_SIZE] = {8};
   cout << "isSorted returned " << isSorted(testArray3, TEST_ARRAY_3_SIZE) << "\n";
+
+  // Question 2
+  const char test_char_arr[10] = {'a', 'b', 'C', 'D', 'e', 'F', 'g', 'h', 'i', 'J'};
+  int count = 0;
+  for (int i = 0; i < 10; i++) {
+    if (test_char_arr[i] >= 65 && test_char_arr[i] <= 90) {
+      count++;
+    }
+  }
+  cout << "Number of uppercase: " << count << "\n";
 }
